@@ -1,0 +1,82 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+	    float mes, soma = 0, eAtual1, eAtual2, eAtual3, tr1, tr2, tr3, lr1, lr2, lr3;
+	    String tmd, produto1, produto2, produto3;
+	    float vmd1, vmd2, vmd3, eMinimo1, eMinimo2, eMinimo3, eMaximo1, eMaximo2, eMaximo3;
+	    int i, j;
+	    Scanner info = new Scanner(System.in);
+	    
+	        System.out.println("Digite o nome do produto: ");
+	        produto1 = info.next();
+	    for(i = 0; i < 4; i++){
+	        System.out.printf("Digite o valor do %d mês: ",i + 1);
+	        mes = info.nextFloat();
+	        soma += mes;
+	    }
+	    System.out.println("Digite o tempo de reposição: ");
+	    tr1 = info.nextFloat();
+	    System.out.println("Digite o lote de reposição: ");
+	    lr1 = info.nextFloat();
+	    System.out.println("Digite o estoque atual: ");
+	    eAtual1 = info.nextFloat();
+	    
+	    vmd1 = (soma / i) / 25;
+	    eMinimo1 = vmd1 * tr1;
+	    eMaximo1 = eMinimo1 + lr1;
+	    soma = 0;
+	    
+	    System.out.println("Digite o nome do produto: ");
+	        produto2 = info.next();
+	    for(i = 0; i < 4; i++){
+	        System.out.printf("Digite o valor do %d mês: ",i + 1);
+	        mes = info.nextFloat();
+	        soma += mes;
+	    }
+	    System.out.println("Digite o tempo de reposição: ");
+	    tr2 = info.nextFloat();
+	    System.out.println("Digite o lote de reposição: ");
+	    lr2 = info.nextFloat();
+	    System.out.println("Digite o estoque atual: ");
+	    eAtual2 = info.nextFloat();
+	    vmd2 = (soma / i) / 25;
+	    eMinimo2 = vmd2 * tr2;
+	    eMaximo2 = eMinimo2 + lr2;
+	    soma = 0;
+	    
+	    System.out.println("Digite o nome do produto: ");
+	        produto3 = info.next();
+	    for(i = 0; i < 4; i++){
+	        System.out.printf("Digite o valor do %d mês: ",i + 1);
+	        mes = info.nextFloat();
+	        soma += mes;
+	    }
+	    System.out.println("Digite o tempo de reposição: ");
+	    tr3 = info.nextFloat();
+	    System.out.println("Digite o lote de reposição: ");
+	    lr3 = info.nextFloat();
+	    System.out.println("Digite o estoque atual: ");
+	    eAtual3 = info.nextFloat();
+	    vmd3 = (soma / i) / 25;
+	    eMinimo3 = vmd3 * tr3;
+	    eMaximo3 = eMinimo3 + lr3;
+	    soma = 0;
+	    
+	    info.close();
+	    
+	        System.out.println("Produto: "+produto1);
+	        System.out.println("Venda media diaria: "+vmd1);
+	        System.out.println("Estoque minimo: "+eMinimo1);
+	        System.out.println("Estoque maximo: "+eMaximo1);
+	        
+	        System.out.println("Produto: "+produto2);
+	        System.out.println("Venda media diaria: "+vmd2);
+	        System.out.println("Estoque minimo: "+eMinimo2);
+	        System.out.println("Estoque maximo: "+eMaximo2);
+	        
+	        System.out.println("Produto: "+produto3);
+	        System.out.println("Venda media diaria: "+vmd3);
+	        System.out.println("Estoque minimo: "+eMinimo3);
+	        System.out.println("Estoque maximo: "+eMaximo3);
+	    }
+	}
