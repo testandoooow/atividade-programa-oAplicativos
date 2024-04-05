@@ -4,7 +4,7 @@ public class Main{
 	    float mes1, mes2, mes3, mes4, soma = 0, eAtual1, eAtual2, eAtual3, tr1, tr2, tr3, lr1, lr2, lr3;
 	    String tmd, produto1, produto2, produto3;
 	    float vmd1, vmd2, vmd3, eMinimo1, eMinimo2, eMinimo3, eMaximo1, eMaximo2, eMaximo3;
-	    int i = 2, j;
+	    int i = 2;
 	    Scanner info = new Scanner(System.in);
 	    
 	    while(i == 2){
@@ -92,16 +92,31 @@ public class Main{
 	        System.out.println("Venda media diaria: "+vmd1);
 	        System.out.println("Estoque minimo: "+eMinimo1);
 	        System.out.println("Estoque maximo: "+eMaximo1);
+	        if(eAtual1 < eMinimo1){
+	            System.out.println("Comprar!");
+	        } else {
+	            System.out.println("Não comprar!");
+	        }
 	        
 	        System.out.println("Produto: "+produto2);
 	        System.out.println("Venda media diaria: "+vmd2);
 	        System.out.println("Estoque minimo: "+eMinimo2);
 	        System.out.println("Estoque maximo: "+eMaximo2);
+	        if(eAtual1 < eMinimo1){
+	            System.out.println("Comprar!");
+	        } else {
+	            System.out.println("Não comprar!");
+	        }
 	        
 	        System.out.println("Produto: "+produto3);
 	        System.out.println("Venda media diaria: "+vmd3);
 	        System.out.println("Estoque minimo: "+eMinimo3);
 	        System.out.println("Estoque maximo: "+eMaximo3);
+	        if(eAtual1 < eMinimo1){
+	            System.out.println("Comprar!");
+	        } else {
+	            System.out.println("Não comprar!");
+	        }
 	    } else {
 	        break;
 	    }
